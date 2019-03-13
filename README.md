@@ -18,7 +18,9 @@ This plugin is currently under active development and has not yet been published
 - [ ] logout
 - [ ] share
 
-Check out the [ionic sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
+Check it out on the [ionic sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
+
+Follow me [@Twitter](https://twitter.com/StewanSilva)
 
 ## License
 
