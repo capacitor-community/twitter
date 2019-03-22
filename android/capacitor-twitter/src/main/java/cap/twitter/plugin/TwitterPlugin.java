@@ -23,7 +23,7 @@ import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterAuthClient;
 
-@NativePlugin()
+@NativePlugin(requestCodes = {140})
 public class TwitterPlugin extends Plugin {
     public static final String CONFIG_KEY_PREFIX = "plugins.TwitterPlugin.";
 
@@ -43,38 +43,41 @@ public class TwitterPlugin extends Plugin {
                 .build();
         Twitter.initialize(config);
 
+
+        //this.bridge.onActivityResult(, , );
+
         super.load();
     }
 
 
     @PluginMethod()
     public void login(final PluginCall call) {
-        execute(new Runnable() {
-            @Override
-            public void run() {
-                Log.d("DEBUG", "LOGIN CALL");
-                TwitterAuthClient authClient =  new TwitterAuthClient();
-                authClient.authorize(getActivity(), new Callback<TwitterSession>() {
-                    @Override
-                    public void success(Result<TwitterSession> result) {
-                        Log.d("DEBUG", "LOGIN SUCCESS");
-                        JSObject ret = new JSObject();
-                        ret.put("authToken", result.data.getAuthToken().token);
-                        ret.put("authTokenSecret", result.data.getAuthToken().secret);
-                        ret.put("userName", result.data.getUserName());
-                        ret.put("userID", result.data.getUserId());
-                        Log.d("DEBUG", String.valueOf(ret));
 
-                        call.success(ret); // this is never called =(
-                    }
-                    @Override
-                    public void failure(TwitterException exception) {
-                        Log.d("DEBUG", "OH NO!! THERE WAS AN ERROR");
-                        call.error("error on auth", exception);
-                    }
-                });
+        Log.d("DEBUG", "LOGIN CALL");
+
+        authClient = new TwitterAuthClient();
+
+        authClient.authorize(getActivity(), new Callback<TwitterSession>() {
+            @Override
+            public void success(Result<TwitterSession> result) {
+                Log.d("DEBUG", "LOGIN SUCCESS");
+                JSObject ret = new JSObject();
+                ret.put("authToken", result.data.getAuthToken().token);
+                ret.put("authTokenSecret", result.data.getAuthToken().secret);
+                ret.put("userName", result.data.getUserName());
+                ret.put("userID", result.data.getUserId());
+                Log.d("DEBUG", String.valueOf(ret));
+
+                call.success(ret); // this is never called =(
+            }
+
+            @Override
+            public void failure(TwitterException exception) {
+                Log.d("DEBUG", "OH NO!! THERE WAS AN ERROR");
+                call.error("error on auth", exception);
             }
         });
+
     }
 
     @PluginMethod()
@@ -83,29 +86,15 @@ public class TwitterPlugin extends Plugin {
         call.success();
     }
 
-//    @Override
-//    protected void handleOnActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.handleOnActivityResult(requestCode, resultCode, data);
-//        authClient.handleOnActivityResult(requestCode, resultCode, data);
-////        PluginCall savedCall = getSavedCall();
-////
-////        if (savedCall == null) {
-////            return;
-////        }
-////        if (requestCode == REQUEST_IMAGE_PICK) {
-////            // Do something with the data
-////        }
-//    }
 
     @Override
     protected void handleOnActivityResult(int requestCode, int resultCode, Intent data) {
-
-        // Pass the activity result to the auth client.
-        Log.d("DEBUG PLUGIN", String.valueOf(data));
-
-        // authClient.onActivityResult(requestCode, resultCode, data);
-
-        super.handleOnActivityResult(requestCode, resultCode, data);
+        
+        if (requestCode == 140) {
+           authClient.onActivityResult(requestCode, resultCode, data);
+        } else {
+            super.handleOnActivityResult(requestCode, resultCode, data);
+        }
 
     }
 
