@@ -61,7 +61,7 @@ NSString* const CDVViewWillTransitionToSizeNotification = @"CDVViewWillTransitio
 @synthesize webViewEngine, viewController, commandDelegate, hasPendingOperation, webView;
 
 // Do not override these methods. Use pluginInitialize instead.
-- (instancetype)initWithWebViewEngine:(WKWebView *)theWebViewEngine
+- (instancetype)initWithWebViewEngine:(id)theWebViewEngine
 {
     self = [super init];
     if (self) {

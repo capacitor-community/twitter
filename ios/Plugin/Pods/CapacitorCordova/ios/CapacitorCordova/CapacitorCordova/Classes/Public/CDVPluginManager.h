@@ -12,10 +12,8 @@
 
 @property (nonatomic, strong) NSMutableDictionary * pluginsMap;
 @property (nonatomic, strong) NSMutableDictionary * pluginObjects;
-@property (nonatomic, strong) UIViewController * viewController;
-@property (nonatomic, strong) WKWebView * webView;
 
-- (id)initWithMapping:(NSMutableDictionary*)mapping viewController:(UIViewController*)viewController webView:(WKWebView *)webview;
+- (id)initWithMapping:(NSMutableDictionary*)mapping;
 - (CDVPlugin *)getCommandInstance:(NSString*)pluginName;
 
 @end

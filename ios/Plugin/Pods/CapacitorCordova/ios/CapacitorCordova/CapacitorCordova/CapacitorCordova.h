@@ -17,5 +17,3 @@ FOUNDATION_EXPORT const unsigned char CapacitorCordovaVersionString[];
 #import <Cordova/CDVInvokedUrlCommand.h>
 #import <Cordova/CDVConfigParser.h>
 #import <Cordova/CDVViewController.h>
-#import <Cordova/NSDictionary+CordovaPreferences.h>
-#import <Cordova/CDVURLProtocol.h>

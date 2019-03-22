@@ -11,5 +11,4 @@
     s.ios.deployment_target  = '11.0'
     s.dependency 'Capacitor'
     s.dependency 'TwitterKit'
-    s.dependency 'TwitterCore'
   end

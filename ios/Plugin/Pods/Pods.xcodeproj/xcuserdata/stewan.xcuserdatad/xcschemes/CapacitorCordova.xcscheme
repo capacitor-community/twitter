@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF421B8AA046EF847E09051189A25CAB"
+               BlueprintIdentifier = "2E676FA66C1C04DA3B04FAF0F01DC655"
                BlueprintName = "CapacitorCordova"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "CapacitorCordova.framework">
