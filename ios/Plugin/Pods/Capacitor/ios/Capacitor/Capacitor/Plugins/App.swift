@@ -1,8 +1,7 @@
 import Foundation
-import SafariServices
 
-@objc(App)
-public class App : CAPPlugin {
+@objc(CAPAppPlugin)
+public class CAPAppPlugin : CAPPlugin {
   var lastUrlOpenOptions: [String:Any?]?
   
   public override func load() {

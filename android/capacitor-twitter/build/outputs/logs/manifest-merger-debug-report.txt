@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
+ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
 	package
 		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:2:5-33
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
-		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
+		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
-		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-10:12
+		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:1-4:12
 		INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:1:11-69
@@ -25,12 +25,6 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:3:5-68
 	android:name
 		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:3:22-66
-application
-ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:5:5-8:19
-activity#cap.twitter.plugin.TwitterActivity
-ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:6:9-7:20
-	android:name
-		ADDED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml:6:19-68
 uses-sdk
 INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/stewan/dev/capacitor-twitter-example/node_modules/capacitor-twitter/android/capacitor-twitter/src/main/AndroidManifest.xml

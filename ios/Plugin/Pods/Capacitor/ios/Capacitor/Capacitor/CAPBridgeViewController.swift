@@ -57,7 +57,8 @@ class CAPBridgeViewController: UIViewController, WKScriptMessageHandler, WKUIDel
     if Bundle.main.path(forResource: "public/index", ofType: "html") == nil {
       print("⚡️  FATAL ERROR: Unable to load public/index.html")
       print("⚡️  This file is the root of your web app and must exist before")
-      print("⚡️  Capacitor can run. Ensure you've run capacitor sync at least once")
+      print("⚡️  Capacitor can run. Ensure you've run capacitor copy at least once")
+      
       exit(1)
     }
 
@@ -97,6 +98,13 @@ class CAPBridgeViewController: UIViewController, WKScriptMessageHandler, WKUIDel
     
     webServer.addGETHandler(forBasePath: "/", directoryPath: publicPath!, indexFilename: "index.html", cacheAge: 0, allowRangeRequests: true)
     
+    webServer.addHandler(forMethod: "GET", pathRegex: "/var/mobile/Containers/Data/Application/", request: GCDWebServerFileRequest.self) { (request, block) in
+      block(GCDWebServerFileResponse(file: request.url.absoluteString.replacingOccurrences(of: "http://localhost:\(port)", with: ""), byteRange: request.byteRange))
+    }
+
+    webServer.addHandler(forMethod: "GET", pathRegex: "cordova.js", request: GCDWebServerFileRequest.self) { (request, block) in
+      block(GCDWebServerResponse())
+    }
     /*
     webServer.addHandler(forMethod: "GET", path: "/", request: GCDWebServerRequest.self, processBlock: { (req) -> GCDWebServerResponse? in
       print("Also in here")
@@ -172,7 +180,9 @@ class CAPBridgeViewController: UIViewController, WKScriptMessageHandler, WKUIDel
         
         let options = dict["options"] as? [String:Any] ?? [:]
         
-        print("⚡️  To Native -> ", pluginId, method, callbackId, options)
+        if pluginId != "Console" {
+          print("⚡️  To Native -> ", pluginId, method, callbackId, options)
+        }
         
         self.bridge!.handleJSCall(call: JSCall(options: options, pluginId: pluginId, method: method, callbackId: callbackId))
       } else if type == "cordova" {

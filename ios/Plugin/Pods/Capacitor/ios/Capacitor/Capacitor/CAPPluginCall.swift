@@ -15,19 +15,27 @@ public extension CAPPluginCall {
     return self.options[key] as? [T] ?? defaultValue
   }
   
-  public func getBool(_ key: String, defaultValue: Bool?) -> Bool? {
+  public func getBool(_ key: String, _ defaultValue: Bool? = nil) -> Bool? {
     return self.options[key] as? Bool ?? defaultValue
   }
   
-  public func getInt(_ key: String, defaultValue: Int?) -> Int? {
+  public func getInt(_ key: String, _ defaultValue: Int? = nil) -> Int? {
     return self.options[key] as? Int ?? defaultValue
   }
   
-  public func getString(_ key: String, defaultValue: String? = nil) -> String? {
+  public func getFloat(_ key: String, _ defaultValue: Float? = nil) -> Float? {
+    return self.options[key] as? Float ?? defaultValue
+  }
+  
+  public func getDouble(_ key: String, _ defaultValue: Double? = nil) -> Double? {
+    return self.options[key] as? Double ?? defaultValue
+  }
+  
+  public func getString(_ key: String, _ defaultValue: String? = nil) -> String? {
     return self.options[key] as? String ?? defaultValue
   }
   
-  public func getDate(_ key: String, defaultValue: Date? = nil) -> Date? {
+  public func getDate(_ key: String, _ defaultValue: Date? = nil) -> Date? {
     guard let isoString = self.options[key] as? String else {
       return defaultValue
     }
@@ -41,6 +49,10 @@ public extension CAPPluginCall {
   public func getObject(_ key: String, defaultValue: [String:Any]? = nil) -> [String:Any]? {
     return self.options[key] as? [String:Any] ?? defaultValue
   }
+  
+  public func hasOption(_ key: String) -> Bool {
+    return self.options.index(forKey: key) != nil
+  }
 
   public func success() {
     successHandler(CAPPluginCallResult(), self)
@@ -50,7 +62,19 @@ public extension CAPPluginCall {
     successHandler(CAPPluginCallResult(data), self)
   }
   
+  public func resolve() {
+    successHandler(CAPPluginCallResult(), self)
+  }
+  
+  public func resolve(_ data: PluginResultData = [:]) {
+    successHandler(CAPPluginCallResult(data), self)
+  }
+  
   public func error(_ message: String, _ error: Error? = nil, _ data: PluginCallErrorData = [:]) {
+    errorHandler(CAPPluginCallError(message: message, error: error, data: data))
+  }
+  
+  public func reject(_ message: String, _ error: Error? = nil, _ data: PluginCallErrorData = [:]) {
     errorHandler(CAPPluginCallError(message: message, error: error, data: data))
   }
 }

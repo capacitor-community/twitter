@@ -1,15 +1,15 @@
 import Foundation
 import AudioToolbox
 
-@objc(SplashScreen)
-public class SplashScreen : CAPPlugin {
+@objc(CAPSplashScreenPlugin)
+public class CAPSplashScreenPlugin : CAPPlugin {
   var imageView = UIImageView()
   var image: UIImage?
   var call: CAPPluginCall?
   var hideTask: Any?
   var isVisible: Bool = false
   
-  let launchShowDuration = 5000
+  let launchShowDuration = 3000
   
   let defaultFadeInDuration = 200
   let defaultFadeOutDuration = 200

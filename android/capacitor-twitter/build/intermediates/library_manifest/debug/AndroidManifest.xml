@@ -10,9 +10,4 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application>
-        <activity android:name="cap.twitter.plugin.TwitterActivity" >
-        </activity>
-    </application>
-
 </manifest>
