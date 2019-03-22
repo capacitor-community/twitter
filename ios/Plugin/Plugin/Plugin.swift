@@ -13,7 +13,7 @@ public class TwitterPlugin: CAPPlugin
 //, UIApplicationDelegate, TWTRComposerViewControllerDelegate
 {
     
-    //    weak var imgTweet: UIImageView!
+    //    weak var i2gTweet: UIImageView!
     //    weak var txtTweet: UITextView!
     
     //    private func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {

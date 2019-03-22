@@ -1,4 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cap.twitter.plugin">
+    <uses-permission android:name = "android.permission.INTERNET"/>
 
-  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cap.twitter.plugin.capacitortwitter">
+    <application>
+        <activity android:name="cap.twitter.plugin.TwitterActivity">
+        </activity>
+    </application>
+
 </manifest>
