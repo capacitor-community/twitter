@@ -1,7 +1,7 @@
 {
   "name": "capacitor-twitter",
   "version": "0.0.4",
-  "description": "access native twitter features like sign in and share",
+  "description": "Enable TwitterKit features for Capacitor",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
