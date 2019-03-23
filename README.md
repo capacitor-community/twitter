@@ -35,7 +35,7 @@ Capacitor plugin to enable some native twitter features
 - add a new url type at Xcode (info tab) and make sure the url scheme follows the format `twitterkit-your_consumer_api_key` (grab a key at twitter developer site)
 - also at twitter developer site, add a new callback url in the same format: `twitterkit-your_consumer_api_key`
 
-Then you should be set to go. Run `ionic cap run ios --livereload` to start the server and then play it through xcode
+Then you should be set to go. Run `ionic cap run ios --livereload` to start the server and play it through xcode
 
 > Important Notice: every time you change a native code you may need to clean the cache (Product > Clean build folder) and then run the app again.
 
@@ -66,7 +66,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 
 > on your `MainActivity.java` file add to the header `import cap.twitter.plugin.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
 
-Now you should be set to go. Try `ionic cap run android --livereload` to start the server and then play/debug it through Android Studio
+Now you should be set to go. Try `ionic cap run android --livereload` to start the server and play/debug it through Android Studio
 
 > Important Notice: every time you change a native code you may need to clean the cache (Build > Clean Project | Build > Rebuild Project) and then run the app again.
 
