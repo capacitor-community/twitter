@@ -97,7 +97,7 @@ Follow me [@Twitter](https://twitter.com/StewanSilva)
 
 Cheers 🍻
 
-## Other cool stuff
+## Related projects
 
 - [Capacitor oAuth2](https://github.com/moberwasserlechner/capacitor-oauth2)
 
