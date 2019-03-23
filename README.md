@@ -8,6 +8,25 @@ Capacitor plugin to enable some native twitter features
 - Logout
 - isLogged
 
+## Usage
+
+```js
+import { Twitter } from "capacitor-twitter";
+const twitter = new Twitter();
+
+twitter
+  .login()
+  .then(r => console.log(r)) // { authToken:string, authTokenSecret:string, userName:string, userID:string }
+  .catch(err => console.log(err));
+
+twitter
+  .isLogged()
+  .then(r => console.log(r)) // returns { in: boolean, out: boolean }
+  .catch(err => console.log(err));
+
+twitter.logout();
+```
+
 ## iOS Setup
 
 - `ionic start my-cap-app --capacitor`

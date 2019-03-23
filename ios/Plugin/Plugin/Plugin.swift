@@ -46,11 +46,8 @@ public class TwitterPlugin: CAPPlugin
     
     @objc func login(_ call: CAPPluginCall) {
         DispatchQueue.main.async {
-            print("DISPATCH LOGIN")
-            
             TWTRTwitter.sharedInstance().logIn(completion: { (session, error) in
                 if session != nil { // Log in succeeded
-                    print("SESSION TOKEN: \(String(describing: session?.authToken))")
                     TWTRTwitter.sharedInstance().sessionStore.saveSession(withAuthToken: session!.authToken, authTokenSecret: session!.authTokenSecret) { session, error in
                     }
                     call.success([

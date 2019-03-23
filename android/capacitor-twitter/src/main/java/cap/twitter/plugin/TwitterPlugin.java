@@ -53,8 +53,6 @@ public class TwitterPlugin extends Plugin {
 
     @PluginMethod()
     public void login(final PluginCall call) {
-        Log.d("DEBUG", "LOGIN CALL");
-
         authClient.authorize(getActivity(), new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
@@ -63,11 +61,7 @@ public class TwitterPlugin extends Plugin {
                 ret.put("authTokenSecret", result.data.getAuthToken().secret);
                 ret.put("userName", result.data.getUserName());
                 ret.put("userID", result.data.getUserId());
-
-                Log.d("DEBUG", "LOGIN SUCCESS");
-                // Log.d("DEBUG", String.valueOf(ret));
-
-                call.success(ret); // this is never called =(
+                call.success(ret);
             }
             @Override
             public void failure(TwitterException exception) {
@@ -91,15 +85,11 @@ public class TwitterPlugin extends Plugin {
         JSObject ret = new JSObject();
 
         if (session != null) {
-
             TwitterAuthToken authToken = session.getAuthToken();
 
             String token = authToken.token;
             String secret = authToken.secret;
-
-            Log.d("TOKEN", String.valueOf(token));
-
-
+         
             ret.put("in", true);
             ret.put("authToken", token);
             ret.put("authTokenSecret", secret);
@@ -118,5 +108,4 @@ public class TwitterPlugin extends Plugin {
             super.handleOnActivityResult(requestCode, resultCode, data);
         }
     }
-
 }
