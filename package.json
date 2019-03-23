@@ -31,7 +31,11 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "twitter",
+    "twitter kit",
+    "twitter ios",
+    "twitter android"
   ],
   "capacitor": {
     "ios": {

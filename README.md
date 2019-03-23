@@ -1,6 +1,6 @@
 # capacitor-twitter
 
-Capacitor plugin to enable some native twitter features
+Capacitor plugin to enable some native twitter features such as login, logout and check if whether user is logged in or not.
 
 ## API
 
