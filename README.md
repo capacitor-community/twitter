@@ -12,7 +12,7 @@ Capacitor plugin to enable some native twitter features
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
-- `npm install —save capacitor-twitter`
+- `npm install —-save capacitor-twitter`
 - `mkdir www && touch www/index.html`
 - `npx cap add ios`
 - add the consumer keys at `capacitor.config.json`
@@ -43,7 +43,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
-- `npm install —save capacitor-twitter`
+- `npm install —-save capacitor-twitter`
 - `mkdir www && touch www/index.html`
 - `npx cap add android`
 - add the consumer keys at `capacitor.config.json`
