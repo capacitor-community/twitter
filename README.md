@@ -27,7 +27,7 @@ twitter
 twitter.logout();
 ```
 
-## iOS Setup
+## iOS setup
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
@@ -58,7 +58,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 
 > Important Notice: every time you change a native code you may need to clean the cache (Product > Clean build folder) and then run the app again.
 
-## Android Setup
+## Android setup
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
@@ -96,10 +96,6 @@ Check it out on the [sample app](https://github.com/stewwan/capacitor-twitter-ex
 Follow me [@Twitter](https://twitter.com/StewanSilva)
 
 Cheers 🍻
-
-## Related projects
-
-- [Capacitor oAuth2](https://github.com/moberwasserlechner/capacitor-oauth2)
 
 ## License
 
