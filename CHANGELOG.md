@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.8"></a>
+## [0.0.8](https://github.com/stewwan/capacitor-twitter/compare/v0.0.7...v0.0.8) (2019-03-24)
+
+
+### Bug Fixes
+
+* **android:** add appcompat support ([e5ba68b](https://github.com/stewwan/capacitor-twitter/commit/e5ba68b))
+
+
+
 <a name="0.0.7"></a>
 ## [0.0.7](https://github.com/stewwan/capacitor-twitter/compare/v0.0.6...v0.0.7) (2019-03-23)
 
