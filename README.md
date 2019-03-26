@@ -83,7 +83,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 - at twitter developer site, add this callback url: `twittersdk://`
 - `[extra step]` in android case we need to tell Capacitor to initialise the plugin:
 
-> on your `MainActivity.java` file add to the header `import cap.twitter.plugin.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
+> on your `MainActivity.java` file add `import cap.twitter.plugin.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
 
 Now you should be set to go. Try `ionic cap run android --livereload` to start the server and play/debug it through Android Studio
 
@@ -92,6 +92,10 @@ Now you should be set to go. Try `ionic cap run android --livereload` to start t
 ## Sample app
 
 Check it out on the [sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
+
+## You may also like
+
+- [capacitor-fcm](https://github.com/stewwan/capacitor-fcm)
 
 Follow me [@Twitter](https://twitter.com/StewanSilva)
 
