@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.11"></a>
+## [0.0.11](https://github.com/stewwan/capacitor-twitter/compare/v0.0.10...v0.0.11) (2019-03-31)
+
+
+### Bug Fixes
+
+* **README:** add the other packages ([60f48f0](https://github.com/stewwan/capacitor-twitter/commit/60f48f0))
+
+
+
 <a name="0.0.10"></a>
 ## [0.0.10](https://github.com/stewwan/capacitor-twitter/compare/v0.0.9...v0.0.10) (2019-03-31)
 
