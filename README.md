@@ -96,6 +96,8 @@ Check it out on the [sample app](https://github.com/stewwan/capacitor-twitter-ex
 ## You may also like
 
 - [capacitor-fcm](https://github.com/stewwan/capacitor-fcm)
+- [capacitor-intercom](https://github.com/stewwan/capacitor-intercom)
+- [capacitor-media](https://github.com/stewwan/capacitor-media)
 
 Follow me [@Twitter](https://twitter.com/StewanSilva)
 
