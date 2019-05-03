@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.12"></a>
+## [0.0.12](https://github.com/stewwan/capacitor-twitter/compare/v0.0.11...v0.0.12) (2019-05-03)
+
+
+### Bug Fixes
+
+* **android:** cap implementation ([77c7ac7](https://github.com/stewwan/capacitor-twitter/commit/77c7ac7))
+
+
+
 <a name="0.0.11"></a>
 ## [0.0.11](https://github.com/stewwan/capacitor-twitter/compare/v0.0.10...v0.0.11) (2019-03-31)
 
