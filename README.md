@@ -1,4 +1,4 @@
-# capacitor-twitter
+# capacitor-twitter [![npm version](https://badge.fury.io/js/capacitor-twitter.svg)](https://badge.fury.io/js/capacitor-twitter)
 
 Capacitor plugin to enable some native twitter features such as login, logout and check if whether user is logged in or not.
 
@@ -11,7 +11,7 @@ Capacitor plugin to enable some native twitter features such as login, logout an
 ## Usage
 
 ```js
-import { Twitter } from "capacitor-twitter";
+import { Twitter } from 'capacitor-twitter';
 const twitter = new Twitter();
 
 twitter
@@ -96,6 +96,7 @@ Check it out on the [sample app](https://github.com/stewwan/capacitor-twitter-ex
 ## You may also like
 
 - [capacitor-fcm](https://github.com/stewwan/capacitor-fcm)
+- [capacitor-analytics](https://github.com/stewwan/capacitor-analytics)
 - [capacitor-intercom](https://github.com/stewwan/capacitor-intercom)
 - [capacitor-media](https://github.com/stewwan/capacitor-media)
 
