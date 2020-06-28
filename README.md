@@ -1,6 +1,51 @@
-# capacitor-twitter [![npm version](https://badge.fury.io/js/capacitor-twitter.svg)](https://badge.fury.io/js/capacitor-twitter)
+<p align="center"><br><img src="https://user-images.githubusercontent.com/236501/85893648-1c92e880-b7a8-11ea-926d-95355b8175c7.png" width="128" height="128" /></p>
+<h3 align="center">Capacitor Twitter</h3>
+<p align="center"><strong><code>@capacitor-community/twitter</code></strong></p>
+<p align="center">
+  Capacitor community plugin for enabling TwitterKit capabilities
+</p>
 
-Capacitor plugin to enable some native twitter features such as login, logout and check if whether user is logged in or not.
+<p align="center">
+  <img src="https://img.shields.io/maintenance/yes/2020?style=flat-square" />
+  <a href="https://www.npmjs.com/package/@capacitor-community/twitter"><img src="https://img.shields.io/npm/l/@capacitor-community/twitter?style=flat-square" /></a>
+<br>
+  <a href="https://www.npmjs.com/package/@capacitor-community/twitter"><img src="https://img.shields.io/npm/dw/@capacitor-community/twitter?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/@capacitor-community/twitter"><img src="https://img.shields.io/npm/v/@capacitor-community/twitter?style=flat-square" /></a>
+  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<a href="#contributors"><img src="https://img.shields.io/badge/all%20contributors-1-orange?style=flat-square" /></a>
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+</p>
+
+## Maintainers
+
+| Maintainer   | GitHub                                | Social                                          |
+| ------------ | ------------------------------------- | ----------------------------------------------- |
+| Stewan Silva | [stewwan](https://github.com/stewwan) | [@StewanSilva](https://twitter.com/StewanSilva) |
+
+## Notice 🚀
+
+We're starting fresh under an official org. If you were using the previous npm package `capacitor-twitter`, please update your package.json to `@capacitor-community/twitter`. Check out [changelog](/CHANGELOG.md) for more info.
+
+## Installation
+
+Using npm:
+
+```bash
+npm install @capacitor-community/twitter
+```
+
+Using yarn:
+
+```bash
+yarn add @capacitor-community/twitter
+```
+
+Sync native files:
+
+```bash
+npx cap sync
+```
 
 ## API
 
@@ -11,18 +56,18 @@ Capacitor plugin to enable some native twitter features such as login, logout an
 ## Usage
 
 ```js
-import { Twitter } from 'capacitor-twitter';
+import { Twitter } from "@capacitor-community/twitter";
 const twitter = new Twitter();
 
 twitter
   .login()
-  .then(r => console.log(r)) // { authToken:string, authTokenSecret:string, userName:string, userID:string }
-  .catch(err => console.log(err));
+  .then((r) => console.log(r)) // { authToken:string, authTokenSecret:string, userName:string, userID:string }
+  .catch((err) => console.log(err));
 
 twitter
   .isLogged()
-  .then(r => console.log(r)) // returns { in: boolean, out: boolean }
-  .catch(err => console.log(err));
+  .then((r) => console.log(r)) // returns { in: boolean, out: boolean }
+  .catch((err) => console.log(err));
 
 twitter.logout();
 ```
@@ -31,7 +76,7 @@ twitter.logout();
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
-- `npm install —-save capacitor-twitter`
+- `npm install —-save @capacitor-community/twitter`
 - `mkdir www && touch www/index.html`
 - `npx cap add ios`
 - add the consumer keys at `capacitor.config.json`
@@ -62,7 +107,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 
 - `ionic start my-cap-app --capacitor`
 - `cd my-cap-app`
-- `npm install —-save capacitor-twitter`
+- `npm install —-save @capacitor-community/twitter`
 - `mkdir www && touch www/index.html`
 - `npx cap add android`
 - add the consumer keys at `capacitor.config.json`
@@ -91,19 +136,27 @@ Now you should be set to go. Try `ionic cap run android --livereload` to start t
 
 ## Sample app
 
-Check it out on the [sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
-
-## You may also like
-
-- [capacitor-fcm](https://github.com/stewwan/capacitor-fcm)
-- [capacitor-analytics](https://github.com/stewwan/capacitor-analytics)
-- [capacitor-crashlytics](https://github.com/stewwan/capacitor-crashlytics)
-- [capacitor-intercom](https://github.com/stewwan/capacitor-intercom)
-
-Follow me [@Twitter](https://twitter.com/StewanSilva)
-
-Cheers 🍻
+Check out the [sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
 
 ## License
 
 MIT
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://twitter.com/StewanSilva"><img src="https://avatars1.githubusercontent.com/u/719763?v=4" width="75px;" alt=""/><br /><sub><b>Stew</b></sub></a><br /><a href="https://github.com/capacitor-community/twitter/commits?author=stewwan" title="Code">💻</a> <a href="https://github.com/capacitor-community/twitter/commits?author=stewwan" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

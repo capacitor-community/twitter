@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-twitter",
-  "version": "2.0.0",
+  "name": "@capacitor-community/twitter",
+  "version": "1.0.0",
   "description": "Enable TwitterKit features for Capacitor",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -9,10 +9,11 @@
     "clean": "rm -rf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "release:custom": "standard-version release --release-as x.x.x",
     "release:patch": "standard-version release --release-as patch",
     "release:minor": "standard-version release --release-as minor",
-    "release:major": "standard-version release --release-as major"
+    "release:major": "standard-version release --release-as major",
+    "contributors:add": "all-contributors add",
+    "contributors:gen": "all-contributors generate"
   },
   "author": "Stewan Silva",
   "license": "MIT",
@@ -20,13 +21,14 @@
     "@capacitor/core": "latest"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.16.0",
     "typescript": "^2.6.2"
   },
   "files": [
     "dist/",
     "ios/",
     "android/",
-    "CapacitorTwitter.podspec"
+    "CapacitorCommunityTwitter.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -47,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stewwan/capacitor-twitter"
+    "url": "https://github.com/capacitor-community/twitter"
   },
   "bugs": {
-    "url": "https://github.com/stewwan/capacitor-twitter/issues"
+    "url": "https://github.com/capacitor-community/twitter/issues"
   }
 }
