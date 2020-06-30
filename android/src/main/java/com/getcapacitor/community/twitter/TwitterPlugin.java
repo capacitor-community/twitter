@@ -1,5 +1,4 @@
-package io.stewan.capacitor.twitter;
-
+package com.getcapacitor.community.twitter;
 import android.content.Intent;
 import android.util.Log;
 
@@ -30,8 +29,8 @@ public class TwitterPlugin extends Plugin {
 
     @Override()
     public void load() {
-        String consumerKey = Config.getString(CONFIG_KEY_PREFIX + "consumerKey", "ADD_IN_CAPACITOR_CONFIG_JSON");
-        String consumerSecret = Config.getString(CONFIG_KEY_PREFIX + "consumerSecret", "ADD_IN_CAPACITOR_CONFIG_JSON");
+        String consumerKey = this.bridge.getConfig().getString(CONFIG_KEY_PREFIX + "consumerKey", "ADD_IN_CAPACITOR_CONFIG_JSON");
+        String consumerSecret = this.bridge.getConfig().getString(CONFIG_KEY_PREFIX + "consumerSecret", "ADD_IN_CAPACITOR_CONFIG_JSON");
 
         //
         // initialize twitter

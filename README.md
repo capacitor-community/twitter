@@ -56,7 +56,7 @@ npx cap sync
 ## Usage
 
 ```js
-import { Twitter } from "@capacitor-community/twitter";
+import { Twitter } from '@capacitor-community/twitter';
 const twitter = new Twitter();
 
 twitter
@@ -128,7 +128,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 - at twitter developer site, add this callback url: `twittersdk://`
 - `[extra step]` in android case we need to tell Capacitor to initialise the plugin:
 
-> on your `MainActivity.java` file add `import io.stewan.capacitor.twitter.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
+> on your `MainActivity.java` file add `import com.getcapacitor.community.twitter.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
 
 Now you should be set to go. Try `ionic cap run android --livereload` to start the server and play/debug it through Android Studio
 
@@ -157,6 +157,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
