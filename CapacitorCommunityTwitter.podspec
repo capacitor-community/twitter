@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
     s.name = 'CapacitorCommunityTwitter'
-    s.version = '0.0.1'
+    s.version = '1.0.1'
     s.summary = 'Enable TwitterKit features for Capacitor'
     s.license = 'MIT'
     s.homepage = 'https://github.com/capacitor-community/twitter'
