@@ -134,9 +134,9 @@ Now you should be set to go. Try `ionic cap run android --livereload` to start t
 
 > Important Notice: every time you change a native code you may need to clean the cache (Build > Clean Project | Build > Rebuild Project) and then run the app again.
 
-## Sample app
+## Example
 
-Check out the [sample app](https://github.com/stewwan/capacitor-twitter-example) using this plugin.
+- https://github.com/capacitor-community/twitter/blob/master/example
 
 ## License
 
