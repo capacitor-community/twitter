@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/capacitor-community/twitter/compare/v1.0.0...v1.0.1) (2020-06-30)
+
+
+### Features
+
+* add example ([25b8081](https://github.com/capacitor-community/twitter/commit/25b80815c12f6dc5089542f5fa9cd0cdf75053f5))
+
+
+### Bug Fixes
+
+* **android:** update capacitor and change java import to match community standard ([f501f60](https://github.com/capacitor-community/twitter/commit/f501f604482ecd8f19924691293a4bcb5a9a366c))
+
 ## 1.0.0 (2020-06-28)
 
 
