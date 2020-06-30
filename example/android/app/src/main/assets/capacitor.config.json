@@ -1,0 +1,12 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "capacitor-twitter-example",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "plugins": {
+    "TwitterPlugin": {
+      "consumerKey": "XXX",
+      "consumerSecret": "YYY"
+    }
+  }
+}

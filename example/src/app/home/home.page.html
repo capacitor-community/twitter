@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar> <ion-title> Ionic Blank </ion-title> </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster. Go Capacitor!
+  <p>isLogged: {{ isLogged }}</p>
+  {{ session | json }}
+
+  <br />
+  <ion-button
+    [color]="isLogged ? 'danger' : 'success'"
+    (click)="isLogged ? logout() : login()"
+    >{{ isLogged ? "LOGOUT" : "LOGIN" }}</ion-button
+  >
+  <!-- <ion-button [color]="'danger'" (click)="logout()">LOGOUT</ion-button> -->
+</ion-content>
