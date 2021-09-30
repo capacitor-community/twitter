@@ -24,3 +24,7 @@ build
 
 package-lock.json
 android_
+
+
+# Podfiles
+Pods/
