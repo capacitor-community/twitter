@@ -97,7 +97,7 @@ twitter.logout();
 - npx cap open ios
 - sign your app at xcode (general tab)
 - add a new url type at Xcode (info tab) and make sure the url scheme follows the format `twitterkit-your_consumer_api_key` (grab a key at twitter developer site)
-- also at twitter developer site, add a new callback url in the same format: `twitterkit-your_consumer_api_key`
+- also at twitter developer site, add a new callback url in the same format: `twitterkit-your_consumer_api_key://` (with nothing behind it)
 
 Then you should be set to go. Run `ionic cap run ios --livereload` to start the server and play it through xcode
 
@@ -125,7 +125,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 }
 ```
 
-- at twitter developer site, add this callback url: `twittersdk://`
+- at twitter developer site, add this callback url: `twittersdk://` (with nothing behind it)
 - `[extra step]` in android case we need to tell Capacitor to initialise the plugin:
 
 > on your `MainActivity.java` file add `import com.getcapacitor.community.twitter.TwitterPlugin;` and then inside the init callback `add(TwitterPlugin.class);`
