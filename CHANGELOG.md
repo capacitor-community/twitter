@@ -2,9 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## Breaking change
+## [3.0.0](https://github.com/capacitor-community/twitter/compare/v1.0.1...v3.0.0) (2022-05-10)
 
-- Android: replace `cap.twitter.plugin.TwitterPlugin` to `com.getcapacitor.community.twitter.TwitterPlugin` in your `MainActivity.java`
+
+### Features
+
+* add capacitor 3 ([1585233](https://github.com/capacitor-community/twitter/commit/158523336f04bda947e4c1c5c00321fabcb6f4ec))
+* **docs:** add clarification ([6f3cff6](https://github.com/capacitor-community/twitter/commit/6f3cff6b4f9502794ffeca7c7d0bb796d8cd5b4b))
 
 ### [1.0.1](https://github.com/capacitor-community/twitter/compare/v1.0.0...v1.0.1) (2020-06-30)
 
