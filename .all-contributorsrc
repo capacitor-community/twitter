@@ -29,6 +29,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "eidanfi",
+      "name": "eidanfi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18303572?v=4",
+      "profile": "https://github.com/eidanfi",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 5

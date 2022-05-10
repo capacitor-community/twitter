@@ -12,7 +12,7 @@
   <a href="https://www.npmjs.com/package/@capacitor-community/twitter"><img src="https://img.shields.io/npm/dw/@capacitor-community/twitter?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/@capacitor-community/twitter"><img src="https://img.shields.io/npm/v/@capacitor-community/twitter?style=flat-square" /></a>
   <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="#contributors"><img src="https://img.shields.io/badge/all%20contributors-2-orange?style=flat-square" /></a>
+<a href="#contributors"><img src="https://img.shields.io/badge/all%20contributors-3-orange?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 </p>
@@ -153,6 +153,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://twitter.com/StewanSilva"><img src="https://avatars1.githubusercontent.com/u/719763?v=4?s=75" width="75px;" alt=""/><br /><sub><b>Stew</b></sub></a><br /><a href="https://github.com/capacitor-community/twitter/commits?author=stewwan" title="Code">💻</a> <a href="https://github.com/capacitor-community/twitter/commits?author=stewwan" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/mesqueeb"><img src="https://avatars.githubusercontent.com/u/3253920?v=4?s=75" width="75px;" alt=""/><br /><sub><b>Luca Ban</b></sub></a><br /><a href="https://github.com/capacitor-community/twitter/commits?author=mesqueeb" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/eidanfi"><img src="https://avatars.githubusercontent.com/u/18303572?v=4?s=75" width="75px;" alt=""/><br /><sub><b>eidanfi</b></sub></a><br /><a href="#maintenance-eidanfi" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
