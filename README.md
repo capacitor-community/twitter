@@ -17,11 +17,28 @@
 
 </p>
 
+## Sponsors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://intenseloop.com">
+      <img src="https://static.intenseloop.com/assets/logo-512x512.png" width="40" />
+      </a>
+    </td>
+    <td>
+      <a href="https://intenseloop.com">
+      Intenseloop
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Maintainers
 
-| Maintainer   | GitHub                                | Social                                          |
-| ------------ | ------------------------------------- | ----------------------------------------------- |
-| Stewan Silva | [stewwan](https://github.com/stewwan) | [@StewanSilva](https://twitter.com/StewanSilva) |
+| Maintainer   | GitHub                                  | Social                                    |
+| ------------ | --------------------------------------- | ----------------------------------------- |
+| Stewan Silva | [stewones](https://github.com/stewones) | [@stewones](https://twitter.com/stewones) |
 
 ## Notice 🚀
 
@@ -56,7 +73,7 @@ npx cap sync
 ## Usage
 
 ```js
-import { Twitter } from '@capacitor-community/twitter';
+import { Twitter } from "@capacitor-community/twitter";
 const twitter = new Twitter();
 
 twitter
@@ -159,6 +176,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
