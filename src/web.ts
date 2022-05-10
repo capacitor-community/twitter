@@ -1,20 +1,30 @@
-// import { WebPlugin } from "@capacitor/core";
-// import { ITwitterPlugin } from "./definitions";
+import { WebPlugin } from "@capacitor/core";
+import { TwitterPlugin } from "./definitions";
 
-// export class TwitterWeb extends WebPlugin implements ITwitterPlugin {
-//   constructor() {
-//     super({
-//       name: "TwitterPlugin",
-//       platforms: ["web"]
-//     });
-//   }
+export class TwitterWeb extends WebPlugin implements TwitterPlugin {
+  constructor() {
+    super({
+      name: "Twitter",
+      platforms: ["web"],
+    });
+  }
 
-//   async echo(options: { value: string }): Promise<{ value: string }> {
-//     console.log("ECHO", options);
-//     return Promise.resolve({ value: options.value });
-//   }
-// }
+  isLogged(): Promise<{ in: boolean; out: boolean }> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+  login(): Promise<{
+    authToken: string;
+    authTokenSecret: string;
+    userName: string;
+    userID: string;
+  }> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+  logout(): Promise<void> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+}
 
-// const TwitterPlugin = new TwitterWeb();
+const Twitter = new TwitterWeb();
 
-// export { TwitterPlugin };
+export { Twitter };

@@ -21,7 +21,10 @@ import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterAuthClient;
 
-@NativePlugin(requestCodes = {TwitterAuthConfig.DEFAULT_AUTH_REQUEST_CODE})
+// @NativePlugin(requestCodes = {TwitterAuthConfig.DEFAULT_AUTH_REQUEST_CODE})
+@CapacitorPlugin(
+        name = "Twitter"
+)
 public class TwitterPlugin extends Plugin {
     public static final String CONFIG_KEY_PREFIX = "plugins.TwitterPlugin.";
 
@@ -63,13 +66,13 @@ public class TwitterPlugin extends Plugin {
                 ret.put("authTokenSecret", result.data.getAuthToken().secret);
                 ret.put("userName", result.data.getUserName());
                 ret.put("userID", result.data.getUserId());
-                call.success(ret);
+                call.resolve(ret);
             }
 
             @Override
             public void failure(TwitterException exception) {
                 Log.d("DEBUG", "OH NO!! THERE WAS AN ERROR");
-                call.error("error", exception);
+                call.reject("error", exception);
             }
         });
     }
@@ -79,7 +82,7 @@ public class TwitterPlugin extends Plugin {
         authClient.cancelAuthorize();
         SessionManager sessionManager = TwitterCore.getInstance().getSessionManager();
         sessionManager.clearActiveSession();
-        call.success();
+        call.resolve();
     }
 
     @PluginMethod()
@@ -100,7 +103,7 @@ public class TwitterPlugin extends Plugin {
             ret.put("in", false);
         }
 
-        call.success(ret);
+        call.resolve(ret);
     }
 
     @Override

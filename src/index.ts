@@ -1,4 +1,10 @@
-export * from "./definitions";
-export * from "./plugin";
+import { registerPlugin } from "@capacitor/core";
+import { TwitterPlugin } from "./definitions";
 
-// export * from "./web"; //@todo
+const Twitter = registerPlugin<TwitterPlugin>("Twitter", {
+  web: () => import("./web").then((m) => new m.TwitterWeb()),
+});
+
+// export * from './web'; // @todo
+export * from "./definitions";
+export { Twitter };

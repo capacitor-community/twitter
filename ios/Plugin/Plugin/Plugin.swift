@@ -17,6 +17,8 @@ public class TwitterPlugin: CAPPlugin
         let consumerKey = getConfigValue("consumerKey") as? String ?? "ADD_IN_CAPACITOR_CONFIG_JSON"
         let consumerSecret = getConfigValue("consumerSecret") as? String ?? "ADD_IN_CAPACITOR_CONFIG_JSON"
         
+        print("consumerKey: \(String(consumerKey))")
+        
         TWTRTwitter.sharedInstance().start(withConsumerKey: consumerKey, consumerSecret: consumerSecret)
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.didTwitterRespond(notification:)), name: Notification.Name(CAPNotifications.URLOpen.name()), object: nil)
@@ -37,9 +39,9 @@ public class TwitterPlugin: CAPPlugin
     @objc func isLogged(_ call: CAPPluginCall) {
         DispatchQueue.main.async {
             if (TWTRTwitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
-                call.success(["in": true, "out": false])
+                call.resolve(["in": true, "out": false])
             } else {
-                call.success(["in": false, "out": true])
+                call.resolve(["in": false, "out": true])
             }
         }
     }
@@ -50,7 +52,7 @@ public class TwitterPlugin: CAPPlugin
                 if session != nil { // Log in succeeded
                     TWTRTwitter.sharedInstance().sessionStore.saveSession(withAuthToken: session!.authToken, authTokenSecret: session!.authTokenSecret) { session, error in
                     }
-                    call.success([
+                    call.resolve([
                         "authToken": session?.authToken as Any,
                         "authTokenSecret": session?.authTokenSecret as Any,
                         "userName":session?.userName as Any,
@@ -58,7 +60,7 @@ public class TwitterPlugin: CAPPlugin
                         ])
                 } else {
                     print("logIn ERROR: \(String(describing: error))")
-                    call.error("error");
+                    call.reject("error");
                 }
             })
         }
@@ -70,7 +72,7 @@ public class TwitterPlugin: CAPPlugin
             
             if let userId = store.session()?.userID {
                 store.logOutUserID(userId)
-                call.success();
+                call.resolve();
             }
         }
     }

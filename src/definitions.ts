@@ -1,10 +1,4 @@
-declare global {
-  interface PluginRegistry {
-    TwitterPlugin?: ITwitterPlugin;
-  }
-}
-
-export interface ITwitterPlugin {
+export interface TwitterPlugin {
   isLogged(): Promise<{ in: boolean; out: boolean }>;
 
   login(): Promise<{
