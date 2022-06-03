@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/capacitor-community/twitter/compare/v3.0.1...v3.0.2) (2022-06-03)
+
+
+### Bug Fixes
+
+* android errors after migrating to cap v3 ([aac45ef](https://github.com/capacitor-community/twitter/commit/aac45ef49d1ed7f4723a1b2c580471e94ac9ceec))
+
 ### [3.0.1](https://github.com/capacitor-community/twitter/compare/v3.0.0...v3.0.1) (2022-06-03)
 
 ## [3.0.0](https://github.com/capacitor-community/twitter/compare/v1.0.1...v3.0.0) (2022-05-10)
