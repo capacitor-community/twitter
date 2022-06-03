@@ -1,12 +1,10 @@
 package com.getcapacitor.community.twitter;
 import android.content.Intent;
 import android.util.Log;
-
-import com.getcapacitor.Config;
+import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
-import com.getcapacitor.NativePlugin;
 import com.getcapacitor.PluginMethod;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.DefaultLogger;
@@ -21,19 +19,17 @@ import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterAuthClient;
 
-// @NativePlugin(requestCodes = {TwitterAuthConfig.DEFAULT_AUTH_REQUEST_CODE})
 @CapacitorPlugin(
         name = "Twitter"
 )
 public class TwitterPlugin extends Plugin {
-    public static final String CONFIG_KEY_PREFIX = "plugins.TwitterPlugin.";
 
     private TwitterAuthClient authClient;
 
     @Override()
     public void load() {
-        String consumerKey = this.bridge.getConfig().getString(CONFIG_KEY_PREFIX + "consumerKey", "ADD_IN_CAPACITOR_CONFIG_JSON");
-        String consumerSecret = this.bridge.getConfig().getString(CONFIG_KEY_PREFIX + "consumerSecret", "ADD_IN_CAPACITOR_CONFIG_JSON");
+        String consumerKey = this.bridge.getConfig().getPluginConfiguration("Twitter").getString( "consumerKey", "ADD_IN_CAPACITOR_CONFIG_JSON");
+        String consumerSecret = this.bridge.getConfig().getPluginConfiguration("Twitter").getString("consumerSecret", "ADD_IN_CAPACITOR_CONFIG_JSON");
 
         //
         // initialize twitter
