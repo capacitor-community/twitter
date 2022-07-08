@@ -102,7 +102,7 @@ twitter.logout();
 {
  …
   "plugins": {
-   "TwitterPlugin": {
+   "Twitter": {
       "consumerKey": "xxx",
       "consumerSecret": "yyy"
     }
@@ -133,7 +133,7 @@ Then you should be set to go. Run `ionic cap run ios --livereload` to start the 
 {
  …
   "plugins": {
-   "TwitterPlugin": {
+   "Twitter": {
       "consumerKey": "xxx",
       "consumerSecret": "yyy"
     }
